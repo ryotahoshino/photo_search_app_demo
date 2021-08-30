@@ -2,11 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
-  // imagesには配列が格納される。初期値は空。
   const [images, setImages] = useState([]);
-  // textにはinputタグ（検索フィールド）の値が格納される。初期値は''。
   const [text, setText] = useState('');
-  // queryが格納される。
   const [query, setQuery] = useState('apple');
 
   useEffect(() => {
